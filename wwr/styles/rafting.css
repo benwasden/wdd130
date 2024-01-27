@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Zilla+Slab:wght@300&display=swap');
+
+:root {
+    --primary-color: #5a6650;
+    --secondary-color: #12543b;
+    --accent1-color: #b4f8f7;
+    --accent2-color: #85c197;
+
+    --heading-font: 'Anton', sans-serif;
+    --paragraph-font: 'Zilla Slab', serif;
+
+    --nav-background-color: #5a6650;
+    --nav-link-color: #f4f3ee;
+    --nav-hover-link-color: #9af5f3;
+    --nav-hover-background-color: #718064;
+}
+body {
+    font-family: var(--paragraph-font);
+    padding: 20px;
+}
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 370px;
+    font-size: 60px;
+    font-style: italic;
+}
+article {
+    position: absolute;
+    background: white;
+    opacity: 0.8;
+    top: 400px;
+}
+article p {
+    color: black;
+}
+article img {
+    float: right;
+    max-width: 300px;
+    opacity: 1;
+}
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+p {
+    padding: 25px;
+    color: var(--primary-color);
+}
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+footer {
+    background-color: var(--accent2-color);
+}
+footer p {
+    color: rgb(0, 0, 0);
+}
+footer img {
+    width: 25px;
+}
+footer nav{
+    background-color: var(--nav-background-color);
+}
+
+/* Class Selectors below */
+
+.hero {
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

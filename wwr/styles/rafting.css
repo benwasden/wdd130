@@ -48,17 +48,22 @@ p {
     color: var(--primary-color);
 }
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     padding: 20px;
     background-color: var(--accent1-color);
 }
 nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 nav a {
     display: block;
     color: var(--nav-link-color);
+    background-color: var(--nav-background-color);
     text-decoration: none;
     padding: 1rem;
 }
@@ -69,26 +74,72 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+figure {
+    border: thin var(--secondary-color) solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--accent2-color);
 }
 footer p {
+    text-align: center;
+    flex-grow: 1;
     color: rgb(0, 0, 0);
 }
 footer img {
-    width: 25px;
-}
-footer nav{
-    background-color: var(--nav-background-color);
+    width: 62px;
 }
 
 /* Class Selectors below */
 
 .hero {
     position: relative;
+    margin-top: 15px;
 }
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+}
+.history {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: black solid 1px;
+    background-color: var(--accent1-color);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.history-pi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    font-size: 20px;
+}
+.history img {
+    align-self: center;
+    max-width: 100%;
+}
+.adventure-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border: 1px var(--secondary-color) solid;
+    padding: 1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.adventure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 1rem;
 }

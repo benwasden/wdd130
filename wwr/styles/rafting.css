@@ -137,6 +137,7 @@ footer img {
     padding: 1rem;
     margin-top: 15px;
     margin-bottom: 15px;
+    background-color: var(--accent1-color);
 }
 .adventure {
     display: grid;

@@ -121,12 +121,12 @@ footer img {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    max-width: 100%;
     font-size: 20px;
 }
 .history img {
     align-self: center;
     max-width: 100%;
+    margin-bottom: 10px;
 }
 .adventure-header {
     display: flex;

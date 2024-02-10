@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Benjamin Wasden">
+        <meta name="description" content="Ben Wasden WDD 130 Contact Us page">
+        <title>Benjamin Wasden | WDD 130 Contact Us</title>
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.jpg" alt="Rafting Site Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Contact Us!</h1>
+            <section class="company-info">
+                <h2>Company Information</h2>
+                <div class="company-info-content">
+                    <p>Address: 1234 CA-1, Point Reyes Station, CA</p>
+                    <p>Phone Number: +1(707) 123-4567</p>
+                    <p>Email: rapidsatfullthrottle@raft.com</p>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38203.13158850116!2d-122.83761352765153!3d38.07334449941695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085c6801488f9ff%3A0x89f836c68de411c4!2sBlue%20Waters%20Kayaking!5e0!3m2!1sen!2sus!4v1707590785108!5m2!1sen!2sus"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="employee-profile">
+                <h2>Meet our Employees!</h2>
+                <div class="employee-bios">
+                    <figure>
+                        <img src="images/advisor.jpg" alt="Trip Advisor">
+                        <figcaption>Trip Planner</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/satisfaction.jpg" alt="Consultant">
+                        <figcaption>Trip Consultant</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/guide.jpg" alt="Guide">
+                        <figcaption>River Guide</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="contact">
+                    <form id="inquiry">
+                        <fieldset>
+                            <legend>Message Us!</legend>
+                                <div class="identity">
+                                    <label for="fullname">Name</label>
+                                    <input type="text" id="fullname" name="fullname" required><br>
+                                </div>
+                                <div class="identity">
+                                    <label for="useremail">Email</label>
+                                    <input type="email" id="useremail" name="useremail" required><br>
+                                </div>
+                                <div class="purpose-of-message">
+                                    <h3>Purpose of Message</h3>
+                                    <input type="radio" id="geniq" name="geniq" value="General Inquiry">
+                                    <label for="geniq">General Inquiry</label><br>
+                                    <input type="radio" id="resq" name="resq" value="Reservation Question">
+                                    <label for="resq">Reservation Question</label><br>
+                                    <input type="radio" id="site-suggestion" name="site-suggestion" value="Website Suggestion">
+                                    <label for="site-suggestion">Website Suggestion</label><br>
+                                </div>
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="6" cols="40" required></textarea><br>
+                                <div class="identity">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+                                </div>
+                                <button type="submit">Submit Message</button>
+                            </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="https://app.moqups.com/P3TkC3mGjde78sqnZETjESQ9xQEJITGr/view/page/ad12de680">Contact Us Wireframe</a>
+            <p>©2024 | Life Adventures | Benjamin Wasden</p>
+            <nav class="sociallinks">
+                <a href="https://www.tiktok.com">
+                    <img src="images/tiktok.png" alt="TikTok">
+                </a>
+                <a href="https://www.twitter.com">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>

@@ -76,7 +76,7 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-figure {
+.employee-bios figure {
     border: thin var(--secondary-color) solid;
     display: flex;
     flex-flow: column;
@@ -150,7 +150,7 @@ button:hover {
 
 /* Class Selectors below */
 
-.hero {
+.hero, .trip-banner {
     position: relative;
     margin-top: 15px;
 }
@@ -159,7 +159,14 @@ button:hover {
     top: 50px;
     left: 370px;
 }
-.hero img {
+.trip-banner h1 {
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    color: white;
+    font-size: 100px;
+}
+.hero img, .trip-banner img {
     display: block;
     width: 100%;
     height: auto;
@@ -238,4 +245,60 @@ button:hover {
 }
 .purpose-of-message, label[for="message"] {
     text-align: center;
+}
+.trip-table {
+    width: 400px;
+    border: 2px solid var(--secondary-color);
+    text-align: center;
+    border-collapse: collapse;
+}
+.trip-table th, .trip-table td {
+    border: 1px solid var(--secondary-color);
+    padding: 5px 10px;
+}
+.trip-table th {
+    font-size: 25px;
+}
+.destinations, .trip-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.trip-info th {
+    padding: 20px;
+}
+.destinations figure {
+    border: thin var(--secondary-color) solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+.service-contact {
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2px;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+}
+.book-button {
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 25px;
+    font-style: normal;
+    }
+.book-button:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
 }
